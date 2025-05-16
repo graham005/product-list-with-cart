@@ -37,7 +37,7 @@ async function updateCartUI() {
   <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
     <span>${item.name} x${item.quantity}</span>
     <span>$${(item.price * item.quantity).toFixed(2)}</span>
-    <button data-name="${item.name}" class="remove-cart" style="margin-left:8px;">Remove</button>
+    <button data-name="${item.name}" class="remove-cart" style="margin-left:8px; box-shadow:none; border:none;"><img src="./assets//images/icon-remove-item.svg" alt=""></button>
   </div>
 `).join("") + `
   <div style="border-top:1px solid #eee;margin-top:12px;padding-top:8px;display:flex;justify-content:space-between;font-weight:bold;">
