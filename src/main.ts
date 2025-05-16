@@ -1,4 +1,3 @@
-import data from "../data.json"
 import { DatabaseService } from "./database.service";
 
 const db = new DatabaseService();

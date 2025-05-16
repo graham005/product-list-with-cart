@@ -41,7 +41,7 @@ span {
 }
 
 .products img {
-  width: 200px;
+  width: 250px;
   border-radius: 10px;
 }
 .button {
@@ -85,7 +85,7 @@ span {
 
 @media (max-width: 600px) {
   body {
-    flex-direction: column;
+    /* flex-direction: column; */
     margin: 10px;
   }
   .container {
@@ -106,7 +106,7 @@ span {
     margin: 10px 0;
   }
   .add-cart {
-    right: 40px;
+    right: 60px;
     top: -20px;
     width: 100%;
     min-width: 0;

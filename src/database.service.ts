@@ -31,6 +31,7 @@ export class DatabaseService {
                         keyPath: 'name',
                         autoIncrement: false
                 });
+                store.createIndex('title', 'title', { unique: false });
                 }
             };
         });
