@@ -13,7 +13,7 @@ export class DatabaseService {
         this.initDatabase();
     }
 
-    public initDatabase(): Promise<void> {
+    public async initDatabase(): Promise<void> {
         return new Promise((resolve, reject) => {
             const request = indexedDB.open(this.DB_NAME, 1);
 
@@ -31,7 +31,7 @@ export class DatabaseService {
                         keyPath: 'name',
                         autoIncrement: false
                 });
-                store.createIndex('title', 'title', { unique: false });
+                store.createIndex('name', 'name', { unique: true });
                 }
             };
         });
